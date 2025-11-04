@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2f3640;
+}
+
+section {
+  margin: 30px auto;
+  width: 90%;
+  max-width: 500px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.calc-container,
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#display {
+  width: 90%;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: right;
+  padding: 8px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #dcdde1;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #7f8fa6;
+  color: white;
+}
+
+#nuevaTarea {
+  width: 70%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+#agregarTarea {
+  padding: 8px 15px;
+  border: none;
+  background-color: #44bd32;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+#agregarTarea:hover {
+  background-color: #4cd137;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f2f6;
+  margin-bottom: 8px;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+li.completada {
+  text-decoration: line-through;
+  background: #dcdde1;
+}
+
+.btn-eliminar,
+.btn-hecho {
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.btn-hecho {
+  background-color: #4cd137;
+  color: white;
+}
+
+.btn-eliminar {
+  background-color: #e84118;
+  color: white;
+}
